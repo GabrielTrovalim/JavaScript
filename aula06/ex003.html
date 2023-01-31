@@ -18,11 +18,14 @@
 
     <script> //Área JavaScript.
 
-        var n1 = window.prompt('Digite um número') // string
-        var n2 = window.prompt('Digite outro número') // string
+        var n1 = Number.parseFloat(window.prompt('Digite um número'))
+        var n2 = Number.parseFloat(window.prompt('Digite outro número')) 
         //OBS: + server para concatenação. Apenas após a conversão ele tem função matemática.
+
+        //Number.parseFloat() vai converter a variável em um número de ponto flutuante
         var soma = n1 + n2
-        
+        window.alert(`A soma entre ${n1} e ${n2} é igual a ${soma}`) //Exibindo a soma na tela.
+        // Nessa nova etapa foram usados place holders.
     </script>
 </body>
 </html>
