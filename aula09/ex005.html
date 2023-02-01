@@ -25,9 +25,13 @@
 
     <script> // Área de JavaScript.
     var corpo = window.document.body
+    var titu = window.document.getElementsByTagName('h1')[0]
     var p1 = window.document.getElementsByTagName('p')[1] //A contagem começa do 0
-    var div = window.document.querySelector('div#msg')
+    var div = window.document.querySelector('div#msg') //A contagem é importante quando escolhemos pegar um elemento pelo nome da sua tag html.
+
+    //Alterando a aparencia do site por meio do JavaScript
     corpo.style.backgroundColor = 'black'
+    titu.style.textAlign = 'center'
     p1.style.color = 'red'
     div.style.backgroundColor = 'green'
     div.innerText = 'Estou aguardando...'
