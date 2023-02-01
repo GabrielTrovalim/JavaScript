@@ -5,7 +5,96 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calculadora de soma</title>
+    <style> /*Área de estilos css*/
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            padding: 0px;
+            margin: 0px;
+        }
+        
+        main{
+            background-image: linear-gradient(to right, skyblue, pink);
+            height: 100vh;
+            position: relative;
+        }
 
+        main section{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            padding: 10px 20px 20px 20px;
+            background-color: white;
+            width: 500px;
+            border-radius: 10px;
+            transform: translate(-50%, -50%);
+        }
+        section h1{
+            text-align: center;
+            margin-bottom: 50px;
+            font-size: 2em;
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+        }
+        div#visor{
+            background-color: rgba(173, 135, 235, 0.692);
+            border-radius: 12px;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            margin-bottom: 15px;
+            box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.295);
+        }
+        input#txtn1, input#txtn2{
+            position: relative;
+            top: 0%;
+            left: 50%;
+            border-radius: 8px;
+            margin: 0px 10px 0px 0px;
+            padding: 10px;
+            border: none;
+            transform: translate(-100%, -0%);
+        }
+        div#mostruario{
+            display: inline-block;
+            margin-bottom: 15px;
+            margin-right: 10px;
+            padding: 10px;
+            background-color: rgba(211, 211, 211, 0.651);
+            border-radius: 10px;
+            font-weight: bold;
+        }
+        div#result{
+            display: inline-block;
+            padding: 10px;
+            background-color: white;
+            border-radius: 10px;
+            width: calc(100% - 140px);
+            text-align: center;
+            border: 1px solid rgba(187, 187, 187, 0.788);
+        }
+        input.botao{
+            display: block;
+        }
+        input#bot1{
+            background-image: linear-gradient(to right, skyblue, rgb(166, 109, 184));
+            border: none;
+            margin-bottom: 10px;
+            color: white;
+            text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.678);
+            border-radius: 10px;
+            padding: 10px;
+            font-size: 1.2em;
+            width: 100%;
+        }
+        input#bot2{
+            padding: 10px;
+            background-image: linear-gradient(to right, skyblue, rgb(166, 109, 184));
+            text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.678);
+            color: white;
+            border-radius: 10px;
+            border: none;
+            font-size: 1.2em;
+            width: 100%;
+        }
+    </style>    
 </head>
 
 <body>
@@ -15,11 +104,21 @@
             <h1>Somando 2 valores</h1>
 
             <form action="num.php"> <!--Área de formulário necessária para a função de limpar-->
-                <input type="number" name="txtn1" id="txtn1"> +
-                <input type="number" name="txtn2" id="txtn2"> <br>
+                
+                <div id="visor">
+                    <input type="number" name="txtn1" id="txtn1" placeholder="Primeiro número" required>
+                    <input type="number" name="txtn2" id="txtn2" placeholder="Segundo número" required> <br>
+                </div>
 
-                <input type="button" value="Somar" onclick="soma()">
-                <input type="reset" value="Limpar">
+                <div id="mostruario">
+                    Resultado:
+                </div>
+                <div id="result">
+                    aqui
+                </div>
+                
+                <input type="button" value="Somar" class="botao" id="bot1" onclick="soma()">
+                <input type="reset" value="Limpar" class="botao" id="bot2">
             </form>
         </section>
     </main>
