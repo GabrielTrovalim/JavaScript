@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eventos Dom</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        div#area{
+            margin: auto;
+            font-size: 3em;
+            border-radius: 50%;
+            background-color: #5cdb5c;
+            color: white;
+            text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.473);
+            width: 200px;
+            line-height: 200px;
+            text-align: center;
+            height: 200px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="area"> <!--Criando o evento-->
+        Clique
+    </div>
+
+    <script> // Área do JavaScript
+        var glob = window.document.getElementById('area')
+        glob.addEventListener('click', clicar)
+        glob.addEventListener('mouseenter', mousede)
+        glob.addEventListener('mouseout', mousefo)
+
+        function clicar() { // Chamando a função
+            glob.innerText = 'Clicou' // Ação
+        }
+        function mousede(){
+            glob.style.backgroundColor = 'skyblue'
+        }
+        function mousefo(){
+            glob.style.backgroundColor = '#5cdb5c'
+            glob.innerText = 'Clique'
+        }
+    </script>
+</body>
+</html>
