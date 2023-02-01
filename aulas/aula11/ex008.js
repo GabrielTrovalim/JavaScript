@@ -6,5 +6,5 @@ if (vel > 60){
     console.log('Pague a sua multa o quanto antes!')
 } else {
     console.log(`Sua velocidade de ${vel} Km/h está dentro do limite.`)
-    console.log('Dirija sempre usando sinto de segurança')
+    console.log('Dirija sempre usando cinto de segurança')
 }
