@@ -1,12 +1,28 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-br
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Qual país</title>
+    <title>Seu país</title>
 </head>
 <body>
-    
+    <input type="text" name="txtpais" id="txtpais">
+    <input type="button" value="Enviar" onclick="verificar()">
+    <div id="resultado"></div>
+
+    <script>
+        function verificar(){
+            var a = window.document.getElementById('txtpais')
+            var resu = window.document.getElementById('resultado')
+            var ttx = String(a.value) // convertendo o input em texto.
+
+            if (ttx == 'oi') {
+                resu.innerHTML = 'Você digitou oi'
+            } else {
+                resu.innerHTML = 'Você não digitou oi'
+            }
+        }
+    </script>
 </body>
 </html>
