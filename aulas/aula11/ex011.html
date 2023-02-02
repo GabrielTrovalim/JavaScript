@@ -1,27 +1,56 @@
 <!DOCTYPE html>
-<html lang="pt-br
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Seu país</title>
+    <title>Qual País?</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: peachpuff;
+        }
+        div#resultado{
+            background-color: white;
+            width: 420px;
+            height: 150px;
+            border-radius: 10px;
+            margin-top: 20px;
+            line-height: 150px;
+            text-align: center;
+            font-size: 2em;
+        }
+    </style>
 </head>
 <body>
-    <input type="text" name="txtpais" id="txtpais">
-    <input type="button" value="Enviar" onclick="verificar()">
-    <div id="resultado"></div>
+    <h1>Você é brasileiro?</h1>
 
-    <script>
-        function verificar(){
-            var a = window.document.getElementById('txtpais')
+    <form action="oi.php">
+        <p>Diga em que país você nasceu: <input type="text" name="txtpais" id="txtpais" placeholder="Digite aqui"></p>
+        <input type="button" value="Verificar" onclick="ver()">
+        <input type="reset" value="Limpar" onclick="limpar()">
+    </form>
+
+    <div id="resultado">
+
+    </div>
+
+    <script> //Área do JavaScript
+        function ver(){
+            var txtpais = window.document.getElementById('txtpais')
             var resu = window.document.getElementById('resultado')
-            var ttx = String(a.value) // convertendo o input em texto.
+            var pais = String(txtpais.value)
 
-            if (ttx == 'oi') {
-                resu.innerHTML = 'Você digitou oi'
+            if (pais == 'Brasil', 'brasil'){
+                resu.innerHTML = `Você é brasileiro.`
             } else {
-                resu.innerHTML = 'Você não digitou oi'
+                resu.innerHTML = `Você não é brasileiro.`
             }
+        }
+        function limpar(){
+            var resu = window.document.getElementById('resultado')
+
+            resu.innerHTML = `` // Limpando a caixa de resultados.
         }
     </script>
 </body>
