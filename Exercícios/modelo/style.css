@@ -40,11 +40,11 @@ div#msg{
     font-size: 1.5em;
     font-weight: bold;
 }
-div#imagem{
+div img{
     position: absolute;
     top: 50%;
     left: 50%;
-    background: red url('imagens/manhã.jpg') no-repeat center center;
+    background: red;
     background-size: cover;
     border-radius: 50%;
     height: 250px;
@@ -62,7 +62,13 @@ footer{
     text-align: center;
     border-radius: 12px;
     box-shadow: 3px 3px 4px rgba(0, 0, 0, 0.466);
+    transition-duration: 0.4s;
     transform: translate(-50%, 0%);
+}
+footer:hover{
+    width: 220px;
+    height: 35px;
+    transform: translate(-40%, 10%);
 }
 footer a{
     text-decoration: none;
