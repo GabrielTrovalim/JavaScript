@@ -4,10 +4,43 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Verificador de idade</title>
+    <link rel="stylesheet" href="estilos/style.css">
 </head>
 <body>
-    <h1>teste</h1>
+    <header> <!--Cabeçalho-->
+        <h1>Verificador de idade</h1>
+    </header>
+
+    <main> <!--Área principal-->
+        <section>
+            <form action="verifica.php">
+                <div id="ano">
+                    <label for="txtnun">Ano do seu nascimento</label>
+                    <input type="number" name="txtnun" id="txtnun">
+                </div>
+
+                <div id="sexo">
+                    Sexo: 
+                    <input type="radio" name="botsex" id="botsex1">
+                    <label for="botsex1">Masculino</label>
+
+                    <input type="radio" name="botsex" id="botsex2">
+                    <label for="botsex2">Feminino</label>
+                </div>
+                <input type="button" value="verificar" id="botverifica">
+            </form>
+
+            <div id="resultado">
+                Preencha os dados para ver o resultado!
+            </div>
+        </section>
+    </main>
+
+    <footer> <!--Rodapé-->
+        <a href="https://github.com/GabrielTrovalim" target="_blank" rel="external">GabrielTrovalim</a>
+    </footer>
+
+    <script src="script01.js"></script>
 </body>
 </html>
