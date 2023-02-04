@@ -5,6 +5,8 @@ function calcular(){
     var resu = window.document.getElementById('resultado')    
     var nano = Number(txtano.value)
     var soma = atano - nano
+    var vsex = window.document.getElementsByName('botsex')
+    var genero = ``
     
     if (txtano.value.length == 0 || nano > atano){
         window.alert('Invalido')
