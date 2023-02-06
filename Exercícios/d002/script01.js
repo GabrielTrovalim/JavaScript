@@ -16,25 +16,34 @@ function calcular(){
             gen = `um Homem`
             if (idade >= 0  && idade <= 10){
                 //criança
-            } else if (idade < 21) {
+                img.setAttribute('src', 'imagens/kid_h.jpg')
+            } else if (idade < 30) {
                 // jovem
+                img.setAttribute('src', 'imagens/jovem_h.jpg')
             } else if (idade < 50) {
                 // adulto
+                img.setAttribute('src', 'imagens/adulto_h.jpg')
             } else {
                 //idoso
+                img.setAttribute('src', 'imagens/idoso_h.jpg')
             }
         } else if (sex[1].checked) {
             gen = `uma Mulher`
             if (idade >= 0 && idade <= 10){
                 //criança
-            } else if (idade < 21) {
+                img.setAttribute('src', 'imagens/kid_m.jpg')
+            } else if (idade < 30) {
                 // jovem
+                img.setAttribute('src', 'imagens/jovem_m.jpg')
             } else if (idade < 50) {
                 // adulto
+                img.setAttribute('src', 'imagens/adulto_m.jpg')
             } else {
                 // idoso
+                img.setAttribute('src', 'imagens/idoso_m.jpg')
             }
         }
      }
      resu.innerHTML = `Detectamos ${gen} com ${idade} anos!`
+     resu.appendChild(img)
 }

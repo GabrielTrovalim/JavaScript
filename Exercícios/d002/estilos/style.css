@@ -96,3 +96,11 @@ footer a{
     text-decoration: none;
     font-weight: bold;
 }
+img#foto{
+    margin-top: 20px;
+    border-radius: 50%;
+    background-size: cover;
+    box-shadow: 4px 6px 5px rgba(0, 0, 0, 0.432);
+    width: 250px;
+    height: 250px;
+}
