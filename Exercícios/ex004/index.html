@@ -14,10 +14,15 @@
     <main> <!--Área principal do corpo do site-->
         <section> 
             <form action="ex.php">
-                Início: <input type="number" name="start" id="nstart">
-                Fim: <input type="number" name="end" id="nend">
-                Passo: <input type="number" name="passo" id="npasso">
+                <label class="etiqueta" for="nstart">Início: </label>
+                <input class="caixa" type="number" name="start" id="nstart">
 
+                <label class="etiqueta" for="nend">Fim: </label>
+                <input class="caixa" type="number" name="end" id="nend">
+
+                <label class="etiqueta" for="npasso">Passo: </label>
+                <input class="caixa" type="number" name="passo" id="npasso">
+                
                 <input type="button" value="Contar">
                 <input type="reset" value="Limpar">
             </form>

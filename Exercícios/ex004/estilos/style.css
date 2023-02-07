@@ -23,6 +23,22 @@ main section{
     box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.507);
     width: 550px;
 }
+form input.caixa{
+    display: block;
+    margin: 8px 0px;
+    padding: 8px;
+    background-image: linear-gradient(to right, skyblue, rgb(192, 230, 255));
+    width: calc(100% - 15px);
+    box-shadow: 2px 4px 4px rgba(0, 0, 0, 0.514);
+    border-radius: 10px;
+    border: none;
+}
+form label.etiqueta{
+    font-size: 1.4em;
+}
+form label.etiqueta:hover{
+    cursor: pointer;
+}
 footer{
     margin: auto;
     margin-top: 30px;
