@@ -5,18 +5,30 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Exercício</title>
+    <link rel="stylesheet" href="estilos/style.css">
 </head>
 <body>
     <header> <!--Área de cebeçalho-->
-
+        <h1>Vamos contar</h1>
     </header>
     <main> <!--Área principal do corpo do site-->
         <section> 
+            <form action="ex.php">
+                Início: <input type="number" name="start" id="nstart">
+                Fim: <input type="number" name="end" id="nend">
+                Passo: <input type="number" name="passo" id="npasso">
 
+                <input type="button" value="Contar">
+                <input type="reset" value="Limpar">
+            </form>
+            
+            <div id="resu">
+                Resultado aqui...
+            </div>
         </section>
     </main>
     <footer> <!--Rodapé-->
-        <a href="#">Gabriel Trovalim</a>
+        <a href="https://github.com/gabrieltrovalim/" target="_blank" rel="external">Gabriel Trovalim</a>
     </footer>
 </body>
 </html>
