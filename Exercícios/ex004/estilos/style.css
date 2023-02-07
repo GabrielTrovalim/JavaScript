@@ -80,6 +80,13 @@ footer{
     text-align: center;
     transition-duration: 0.4s;
 }
+div#resu{
+    padding: 10px;
+    font-size: 1.5em;
+    background-color: #79aae248;
+    border-radius: 10px;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.411);
+}
 footer:hover{
     transform: translate(40px, 10px);
 }
