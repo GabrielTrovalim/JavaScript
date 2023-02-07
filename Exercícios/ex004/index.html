@@ -23,17 +23,19 @@
                 <label class="etiqueta" for="npasso">Passo: </label>
                 <input class="caixa" type="number" name="passo" id="npasso">
 
-                <input type="button" value="Contar" id="conta">
-                <input type="reset" value="Limpar" id="limpa">
+                <input type="button" value="Contar" id="conta" onclick="contar()">
+                <input type="reset" value="Limpar" id="limpa" onclick="limpar()">
             </form>
             
             <div id="resu">
-                Resultado aqui...
+                Aguardando resultado...
             </div>
         </section>
     </main>
     <footer> <!--Rodapé-->
         <a href="https://github.com/gabrieltrovalim/" target="_blank" rel="external">Gabriel Trovalim</a>
     </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
