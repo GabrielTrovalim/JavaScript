@@ -1,7 +1,7 @@
 var c = 1
 
 while (c <= 6) {
-    console.log('olá!')
+    console.log(`Olá! ${c}`)
     c ++
 }
 
@@ -10,6 +10,6 @@ while (c <= 6) {
 var cont = 1
 
 do{
-    console.log('Hello!')
+    console.log(`Hello! ${cont}`)
     cont ++
 } while (cont <= 10)
