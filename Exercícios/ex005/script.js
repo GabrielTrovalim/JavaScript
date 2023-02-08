@@ -8,6 +8,7 @@ function gerar(){
         window.alert('[Erro] Entrada de dados incompleta')
     } else {
         res.innerHTML = ``
+        
         for(var c = 1; c <= 10; c++){
             var tabu = (num * c) // Multiplicando uma variável pelo contador.
             res.innerHTML += `<br> ${num} X ${c} = ${tabu} <br>`
