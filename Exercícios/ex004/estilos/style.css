@@ -80,8 +80,24 @@ footer{
     text-align: center;
     transition-duration: 0.4s;
 }
-div#resu{
+div#info{
+    display: inline-block;
     padding: 10px;
+    margin-top: 15px;
+    background-color: #79aae248;
+    border-radius: 10px;
+    font-size: 1.5em;
+    width: 120px;
+    text-align: center;
+    margin-right: 10px;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.411);
+}
+div#resu{
+    display: inline-block;
+    padding: 10px;
+    line-height: 1.3em;
+    margin-top: 15px;
+    width: calc(100% - 175px);
     font-size: 1.5em;
     background-color: #79aae248;
     border-radius: 10px;
