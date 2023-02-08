@@ -23,6 +23,49 @@ main section{
     box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.507);
     width: 550px;
 }
+form label#lab{
+    font-size: 1.2em;
+}
+form label#lab{
+    cursor: pointer;
+}
+input#inum{
+   width: calc(100% - 105px);
+   margin-bottom: 15px;
+   border-radius: 10px;
+   border: none;
+   background-color: rgba(211, 211, 211, 0.473);
+   box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.356);
+   padding: 10px;
+}
+input#gera{
+    padding: 10px;
+    font-size: 1.2em;
+    margin-right: 10px;
+    margin-bottom: 15px;
+    border-radius: 8px;
+    border: none;
+    transition-duration: 0.3s;
+    background-image: linear-gradient(to right, rgb(12, 153, 118), rgb(27, 212, 126));
+}
+input#gera:hover{
+    cursor: pointer;
+    box-shadow: 0px 4px 3px rgba(0, 0, 0, 0.411);
+    transform: translate(0px, -5px);
+}
+input#limpa{
+    padding: 10px;
+    font-size: 1.2em;
+    border-radius: 8px;
+    border: none;
+    transition-duration: 0.3s;
+    background-image: linear-gradient(to right,rgb(12, 153, 118), rgb(27, 212, 126));
+}
+input#limpa:hover{
+    cursor: pointer;
+    box-shadow: 0px 4px 3px rgba(0, 0, 0, 0.411);
+    transform: translate(0px, -5px);
+}
 footer{
     margin: auto;
     margin-top: 30px;

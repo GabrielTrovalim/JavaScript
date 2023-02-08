@@ -14,8 +14,9 @@
     <main> <!--Área principal-->
         <section>
             <form action="gerar.php">
-                <label for="inum">Número: </label>
+                <label for="inum" id="lab">Número: </label>
                 <input type="number" name="num" id="inum">
+
                 <input type="button" value="Gerar tabuada" id="gera" onclick="gerar()">
                 <input type="reset" value="Limpar" id="limpa" onclick="limpar()">
             </form>
