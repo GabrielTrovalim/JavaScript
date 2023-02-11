@@ -37,8 +37,23 @@ form input#inun{
     background-image: linear-gradient(to right, cornflowerblue, skyblue);
     border-radius: 5px;
     color: black;
-    width: calc(100% - 226px);
+    width: calc(100% - 310px);
     margin-bottom: 10px;
+}
+input#envia{
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    width: 80px;
+    font-size: 1.2em;
+    background-image: linear-gradient(to right, cornflowerblue, skyblue);
+    transition-duration: 0.1s;
+}
+input#envia:hover{
+    cursor: pointer;
+    background-image: linear-gradient(to right, white, white);
+    border: 2px solid cornflowerblue;
+    box-shadow: 0px 0px 10px rgb(49, 131, 255);
 }
 div#resum{
     margin-bottom: 10px;
@@ -51,7 +66,8 @@ input#verifica{
     padding: 10px;
     border: none;
     border-radius: 10px;
-    width: 80px;
+    width: 90px;
+    text-align: center;
     font-size: 1.2em;
     background-image: linear-gradient(to right, cornflowerblue, skyblue);
     margin-right: 5px;

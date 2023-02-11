@@ -15,14 +15,15 @@
 
     <main> <!--Área principal do site-->
         <section>
-            <form action="oi.php">
+            <form>
                 <label for="inun">Número (entre 1 e 100)</label>
-                <input type="number" name="nun" id="inun" placeholder="Digite o número aqui" oninput="envio()">
+                <input type="number" name="nun" id="inun" placeholder="Digite o número aqui">
+                <input type="button" value="Enviar" onclick="enviar()" id="envia">
 
                 <div id="resum">Aguardando...</div>
 
-                <input type="button" value="Enviar" onclick="verifica" id="verifica">
-                <input type="reset" value="Limpar" onclick="limpar" id="limpa">
+                <input type="button" value="Verificar" onclick="verificar()" id="verifica">
+                <input type="reset" value="Limpar" onclick="limpar()" id="limpa">
             </form>
 
             <div id="resdois">
