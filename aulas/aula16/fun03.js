@@ -7,4 +7,5 @@ function fatorial(n){
     }
 }
 
+console.log(fatorial(5)) // que é igual a 120
 // n! = n x (n-1)!
